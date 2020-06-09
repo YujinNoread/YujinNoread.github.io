@@ -123,6 +123,7 @@ i{
 	width: 200px;
 	padding: 0;
 	margin: 0;
+	font-weight: 300;
 }
 .form input{
 	width: 140px;
@@ -137,11 +138,9 @@ i{
 	color: #2c71b8;
 	outline:none;
    font-family: 'Roboto';
-	font-weight: 300;
 }
 .form input::placeholder{
 	font-family: 'Roboto';
-	font-weight: 300;
 	color: #2c71b8;
 }
 .form button{
