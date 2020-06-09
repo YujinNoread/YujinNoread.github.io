@@ -137,9 +137,12 @@ i{
 	color: #2c71b8;
 	outline:none;
    font-family: 'Roboto';
+	font-weight: 300;
 }
 .form input::placeholder{
+	font-family: 'Roboto';
 	color: #2c71b8;
+	font-weight: 300;
 }
 .form button{
 	width: 30px;
