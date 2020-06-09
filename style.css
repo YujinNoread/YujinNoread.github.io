@@ -141,8 +141,8 @@ i{
 }
 .form input::placeholder{
 	font-family: 'Roboto';
-	color: #2c71b8;
 	font-weight: 300;
+	color: #2c71b8;
 }
 .form button{
 	width: 30px;
