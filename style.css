@@ -140,7 +140,8 @@ i{
 	font-size: 21px;
 	color: #2c71b8;
 	outline:none;
-   font-family: 'Roboto';
+	font-family: 'Roboto';
+	font-weight: 300;
 }
 .form input::placeholder{
 	font-family: 'Roboto';
