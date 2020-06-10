@@ -201,6 +201,9 @@ i{
 	margin-top: 30px;
 	color: rgba(255,255,255,0.5);
 }
+.products__crumbs a:hover{
+	text-decoration: underline;
+}
 .products__crumbs a{
 	text-decoration: none;
 	color: rgba(255,255,255,0.5);
@@ -234,10 +237,49 @@ i{
 	width: 270px;
 }
 .body__img {
-	background: rgba(255,255,255,0.75);
+	background-color: rgba(255,255,255,0.75);
 	width: 270px;
 	height: 180px;
 	position: relative;
+	cursor: pointer;
+}
+.images {
+	position: relative;
+	z-index: 20;
+}
+.image__full {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border: 1px solid #2c71b8;
+	background-image: url('images/icon2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.image__full:hover {
+	background-color: #2c71b8;
+	background-image: url('images/icon4.png');
+	cursor: pointer;
+}
+.image__like {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	border: 1px solid #2c71b8;
+	background-image: url('images/icon3.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.image__like:hover {
+	background-color: #2c71b8;
+	background-image: url('images/icon5.png');
+	cursor: pointer;
 }
 .body__img::before, .body__img::after{
 	content: "";
@@ -255,7 +297,7 @@ i{
 	right: -28px;
 	transform: rotate(-33.5deg);
 }
-.body__img img{
+.body__img>img{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -299,6 +341,11 @@ i{
 	height: 50px;
 	line-height: 50px;
 	border: 1px solid #ffffff;
+	font-weight: bold;
+}
+.body__details:hover {
+	cursor: pointer;
+	background: rgba(255,255,255,0.15);
 }
 .body__add {
 	margin: 15px 30px 30px 30px;
@@ -307,6 +354,11 @@ i{
 	height: 50px;
 	line-height: 50px;
 	border: 1px solid #ffffff;
+	font-weight: bold;
+}
+.body__add:hover {
+	cursor: pointer;
+	background: rgba(255,255,255,0.15);
 }
 .products__link{
 	text-align: center;
@@ -316,4 +368,7 @@ i{
 	text-decoration: none;
 	font-size: 36px;
 	color: #ffffff;
+}
+.products__link a:hover{
+	text-decoration: underline;
 }
