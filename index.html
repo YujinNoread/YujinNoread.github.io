@@ -68,14 +68,57 @@
 		<div class="container">
 			<div class="main__row">
 				<div class="col-md-3">
-					<aside class="filter">Filter</aside>
+					<aside class="filter">
+						<form action="" class="filter__form">
+							<div class="filter__device-type">
+								<div class="filter__title">Device type</div>
+								<input type="checkbox" id="laptop" name="type_laptop">
+								<label for="laptop" class="filter__label">Laptop</label>
+								<input type="checkbox" id="tablet" name="type_tablet">
+								<label for="tablet" class="filter__label">Tablet</label>
+							</div>
+							<div class="filter__device-color">
+								<div class="filter__title">Color</div>
+								<input type="checkbox" id="black" name="color_black">
+								<label for="black" class="filter__label">Black</label>
+								<input type="checkbox" id="red" name="color_red">
+								<label for="red" class="filter__label">Red</label>
+								<input type="checkbox" id="green" name="color_green">
+								<label for="green" class="filter__label">Green</label>
+								<input type="checkbox" id="blue" name="color_blue">
+								<label for="blue" class="filter__label">Blue</label>
+								<input type="checkbox" id="orange" name="color_orange">
+								<label for="orange" class="filter__label">Orange</label>
+							</div>
+							<div class="filter__device-ram">
+								<div class="filter__title">Ram</div>
+								<input type="checkbox" id="gb1" name="ram_1gb">
+								<label for="gb1" class="filter__label">1GB</label>
+								<input type="checkbox" id="gb2" name="ram_2gb">
+								<label for="gb2" class="filter__label">2GB</label>
+								<input type="checkbox" id="gb4" name="ram_4gb"> 
+								<label for="gb4" class="filter__label">4GB</label>
+								<input type="checkbox" id="gb6" name="ram_6gb">
+								<label for="gb6" class="filter__label">6GB</label>
+								<input type="checkbox" id="gb8" name="ram_8gb">
+								<label for="gb8" class="filter__label">8GB</label>
+							</div>
+							<div class="filter__link">
+								<a href="">Show more options ...</a>
+							</div>
+							<button type="submit"><div class="filter__submit button">Submit</div></button>
+						</form>
+						
+					</aside>
 				</div>
 				<div class="col-md-9">
 					<section class="products">
 						<div class="products__crumbs">
-							<a href="">Home page</a> >
-							<a href="">Products</a> >
-							<a href="">Laptops and Tablets</a>
+							<ul>
+								<li><a href="">Home page</a></li>
+								<li><a href="">Products</a></li>
+								<li><a href="" class="last">Laptops and Tablets</a></li>
+							</ul>
 						</div>
 						<div class="products__name">
 							<h1 class="products__title">Laptops and Tablets</h1>
@@ -103,8 +146,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$599 <span>25</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column center">
@@ -124,8 +167,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$1250 <span>99</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column">
@@ -145,8 +188,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$399 <span>50</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column">
@@ -166,8 +209,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$599 <span>25</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column center">
@@ -187,8 +230,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$1250 <span>99</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column">
@@ -208,8 +251,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$399 <span>50</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column">
@@ -229,8 +272,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$599 <span>25</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column center">
@@ -250,8 +293,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$1250 <span>99</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 						<div class="products__column">
@@ -271,8 +314,8 @@
 								<div class="body__size"><span class="bold">Screen size:</span> 7 inches</div>
 								<div class="body__ram"><span class="bold">RAM:</span> 1GB</div>
 								<div class="body__price">$399 <span>50</span></div>
-								<div class="body__details">more details</div>
-								<div class="body__add">Add to cart</div>
+								<div class="body__details button">more details</div>
+								<div class="body__add button">Add to cart</div>
 							</div>
 						</div>
 					</section>
