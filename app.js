@@ -9,10 +9,6 @@ for(let i=0;i<addToCartButtons.length;i++){
 let likeButtons = document.querySelectorAll(".image__like");
 for(let j=0;j<likeButtons.length;j++){
 	likeButtons[j].addEventListener("click",function(){
-		if(likeButtons[j].classList.contains('liked')){
-			likeButtons[j].classList.remove('liked');
-		}else{
-			likeButtons[j].classList.add('liked');
-		}
+		this.classList.toggle('liked')
 	});
 }
