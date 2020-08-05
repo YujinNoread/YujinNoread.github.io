@@ -51,6 +51,7 @@ body{
 }
 .menu{
 	position: relative;
+	z-index: 100;
 }
 .menu>li{
 	width: 25%;
@@ -185,8 +186,59 @@ i{
 /*main==============================================================================================================================================================*/
 /*slider==============================================================================================================================================================*/
 .slider {
-	height: 400px;
 	border-bottom: 1px solid #ffffff;
+	background-color: rgba(37, 90, 147, 0.5);
+}
+.slick-prev:before, .slick-next:before {
+	display: none;
+}
+.slider-block{
+	text-align: center;
+	color: white;
+	font-size: 100px;
+	font-weight: 100;
+	height: 369px;
+	line-height: 369px;
+	position: relative;
+	padding: 0px 30px;
+}
+.slider-block .slick-arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 20;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider-block .slick-arrow.slick-prev{
+	left: 0;
+	background: url("images/arrow_l.png") 0 0 / 100% no-repeat;
+}
+.slider-block .slick-arrow.slick-next{
+	right: 0;
+	background: url("images/arrow_r.png") 0 0 / 100% no-repeat;
+}
+.slider-block .slick-dots li button:before {
+	display: none;
+}
+.slider-block .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-block .slick-dots li{
+	list-style: none;
+}
+.slider-block .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	margin: 0px 10px;
+}
+.slider-block .slick-dots li.slick-active button{
+	background-color: #fff;
 }
 /*filter==============================================================================================================================================================*/
 .filter {

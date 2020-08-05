@@ -5,10 +5,18 @@ for(let i=0;i<addToCartButtons.length;i++){
 		productsCount.textContent = +productsCount.textContent + 1
 	});
 }
+
 /* */
+
 let likeButtons = document.querySelectorAll(".image__like");
 for(let j=0;j<likeButtons.length;j++){
 	likeButtons[j].addEventListener("click",function(){
 		this.classList.toggle('liked')
 	});
 }
+
+/* */
+
+$('.slider-block').slick({
+	dots:true,
+});
