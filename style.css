@@ -566,9 +566,14 @@ input[type="checkbox"]:checked + .filter__label:before{
 	border: 1px solid grey;
 	box-sizing: border-box;
 	background-color: white;
+	position: relative;
 }
 .close-btn {
-	text-align: right;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 10px;
+	right: 10px;
 	cursor: pointer;
 }
 .form-fields {
