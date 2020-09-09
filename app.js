@@ -66,34 +66,43 @@ function Counter(incrementButton,decrementButton,productsQuantity,minCount=1,max
 		let count = +this.domRef.productsQuantity.value;
 		this.domRef.incrementButton.disabled = count >= maxCount;
 		this.domRef.decrementButton.disabled = count <= minCount;
-	}
-	this.incrementButtons = function(){
+	}	
+
+	this.toggleButtonsState();
+	
+	this.increment = function(){
 		let currentCount = +this.domRef.productsQuantity.value;
 		let nextCount = currentCount + 1;
-		this.domRef.productsQuantity.value = +nextCount;
+		this.domRef.productsQuantity.value = nextCount;
+		this.toggleButtonsState();
 	}
-	this.decrementButtons = function(){
+	this.decrement = function(){
 		let currentCount = +this.domRef.productsQuantity.value;
 		let nextCount = currentCount - 1;
-		this.domRef.productsQuantity.value = +nextCount;
+		this.domRef.productsQuantity.value = nextCount;
+		this.toggleButtonsState();
 	}
-	this.toggleButtonsState();
+	this.domRef.incrementButton.addEventListener("click",this.increment.bind(this))
+	this.domRef.decrementButton.addEventListener("click",this.decrement.bind(this))
+
 }
-let products = {};
-for(let i=0;i<productsQuantity.length;i++){
-	let stock = new Counter(incrementButtons[i],decrementButtons[i],productsQuantity[i]);
-	stock.toggleButtonsState();
-	incrementButtons[i].addEventListener("click",function(){
-		products[i]= new Counter(incrementButtons[i],decrementButtons[i],productsQuantity[i])
-		products[i].incrementButtons();
-		products[i].toggleButtonsState();
-	})
-	decrementButtons[i].addEventListener("click",function(){
-		products[i]= new Counter(incrementButtons[i],decrementButtons[i],productsQuantity[i])
-		products[i].decrementButtons();
-		products[i].toggleButtonsState();
-	})
-}
+let products = [];
+productsQuantity.forEach((productsItem,i) => {
+	products[i] = new Counter(incrementButtons[i],decrementButtons[i],productsItem);
+})
+// let products = {};
+// for(let i=0;i<productsQuantity.length;i++){
+// 	let stock = new Counter(incrementButtons[i],decrementButtons[i],productsQuantity[i]);
+// 	stock.toggleButtonsState();
+// 	incrementButtons[i].addEventListener("click",function(){
+// 		products[i]= new Counter(incrementButtons[i],decrementButtons[i],productsQuantity[i])
+// 		products[i].increment();
+// 	})
+// 	decrementButtons[i].addEventListener("click",function(){
+// 		products[i]= new Counter(incrementButtons[i],decrementButtons[i],productsQuantity[i])
+// 		products[i].decrement();
+// 	})
+// }
 // let minCount = 1;
 // let maxCount = 5;
 // for(let i=0;i < productsQuantity.length;i++){
